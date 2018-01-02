@@ -1,5 +1,5 @@
 require("./lib/unpkg")(function(moment){
-    return `${moment().format()}`;
+    return `${moment(0).format()}`;
 }).then(function(result){
     console.log("EXIT result",result);
 });

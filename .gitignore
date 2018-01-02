@@ -1,4 +1,5 @@
 .DS_Store
 package-lock.json
 node_modules
-unpkgmodules/**/*.js
+script/lib/unpkgmodules/*.js
+script/index.js
