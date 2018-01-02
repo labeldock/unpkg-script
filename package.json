@@ -1,0 +1,16 @@
+{
+  "name": "unpkgcli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script/index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon --watch script --ignore unpkgmodules/*"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bluebird": "^3.5.1",
+    "nodemon": "^1.14.7"
+  }
+}
