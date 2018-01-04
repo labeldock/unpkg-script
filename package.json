@@ -4,7 +4,13 @@
   "description": "",
   "main": "script/index.js",
   "scripts": {
-    "start": "./node_modules/.bin/nodemon --watch script --ignore unpkgmodules/*"
+    "babel-node": "babel-node --presets=latest",
+    "start": "./node_modules/.bin/nodemon --watch script --ignore unpkgmodules/* --exec npm run babel-node -- script/index.js"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +18,9 @@
     "axios": "^0.17.1",
     "bluebird": "^3.5.1",
     "nodemon": "^1.14.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1"
   }
 }
